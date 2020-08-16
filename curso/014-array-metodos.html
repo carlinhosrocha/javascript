@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Métodos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var num = new Array();
+		num = [5, 15, 25];
+		num.push(prompt("Adicionar elemento no final:"));
+		num.unshift(prompt("Adicionar elemento no início:"));
+		num.pop(); //remove último elemento do array
+		num.shift(); //remove primeiro elemento do array
+		document.write(num);
+		var n = parseInt(prompt("Digite a posição do elemeto a ser excluído:"));
+		num.splice(n, 1); //remove elemento na posição n, quantos elementos a partir
+		document.write("<br>" + num);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

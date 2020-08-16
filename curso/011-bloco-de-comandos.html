@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blocos de Comando</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var num = parseInt(prompt("Digite um número entre 1 à 3:"));
+		//estrutura de seleção sem a necessidade de explicitar um bloco de comandos
+		if(num == 1)
+			document.write("UM");
+		if(num == 2)
+			document.write("DOIS");
+		if(num == 3)
+			document.write("TRÊS")
+		//usando delimitador de bloco de comandos
+		else{
+			document.write("Opção inválida!");
+			document.write("<br>");
+			document.write("Saindo do sistema...")
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

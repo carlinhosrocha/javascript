@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>querySelectorAll</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{display: flex; background: #999}
+		.caixa{background: #3850b0; width: 155px; height: 155px}
+		.box{background: #f00; width: 155px; height: 155px}
+		.case{background: #f0f; width: 155px; height: 155px}
+		div h1{color: #fff; text-align: center;}
+	</style>
+</head>
+<body>
+	<h1>querySelectorAll</h1>
+	<div class="caixa"><h1>JavaScript</h1></div>
+	<div class="box"><h1>Carlos Rocha</h1></div>
+	<div class="case"><h1>eZattas Web</h1></div>
+	<script type="text/javascript">
+		var titulo = document.querySelectorAll("h1"); //seleciona o elemento informado, retonando uma matriz
+		document.write(titulo[0].innerHTML); //imprime conteudo
+		var caixa = document.querySelectorAll(".caixa");
+		document.write(caixa[0].innerHTML);
+		var h1 = document.querySelectorAll("div > h1");
+		document.write(h1[1].innerHTML);
+	</script>
+</body>
+</html>

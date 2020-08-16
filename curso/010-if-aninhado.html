@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IF Aninhado</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var x, y;
+		x = parseInt(prompt("Digite um número inteiro:"));
+		y = parseInt(prompt("Digite um segundo inteiro:"));
+		var soma = x + y;
+		//estrutura de seleção aninhada
+		if(soma < 100){
+			if(soma < 50){
+				if(soma < 10){
+					alert("A soma dos números é menor que dez!");
+				}
+				alert("O intevalo da soma dos números é entre dez e cinquenta!");
+			}
+			alert("O intevalo da soma dos números é entre cinquenta e cem!");
+		}else{
+			alert("A soma dos números digitados é maior que cem!")
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

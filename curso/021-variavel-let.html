@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variável Let</title>
+	<script type="text/javascript">
+		var num = []
+		var n = parseInt(prompt("Digite quantos números serão entrados: "));
+		for(var i = 0; i < n; i++){
+			let x = parseInt(prompt(i + "° número: ")); //declara variável localmente
+			num.push(x);
+		}
+		document.write("Total de números: " + num);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

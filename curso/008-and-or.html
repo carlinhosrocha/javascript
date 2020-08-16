@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condição Lógica</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function condicao(n, s){
+			var i = 2020 - n;
+			if(((i < 18) || (i >= 60)) && ((s == "F") || (s == "f"))){
+				// or lógico: ||
+				// and lógico: &&
+				return "INCAPACITADO";
+			}else{
+				return "APTO";
+			}
+		}
+		var status, ano, sexo;
+		ano = window.prompt("Digite seu ano de nascimento:");
+		sexo = window.prompt("Digite seu sexo: [M/F]")
+		status = condicao(ano, sexo);
+		document.write("Seu status é " + status + "!");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

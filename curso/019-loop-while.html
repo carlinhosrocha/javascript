@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop While</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var num = parseInt(prompt("Digite o número a ser calculado seu fatorial:"));
+		var fat, cont = 1;
+		cont = num;
+		while(true){
+			if(cont == 1)
+				break
+			fat *= cont;
+			cont --;
+		}
+		document.write("O fatorial de " + num + " = " + fat);
+		while(num--) //contador simplificado
+			document.write("<br>" + num);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

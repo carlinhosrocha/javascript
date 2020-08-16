@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IF Múltiplo Retorno</title>
+	<script type="text/javascript">
+		var notaUm, notaDois, media, status;
+		//recebendo valores e armazenando-os nas variáveis
+		notaUm = parseFloat(window.prompt("Digite a primeira nota:"));
+		notaDois = parseFloat(window.prompt("Digite a segunda nota:"));
+		media = (notaUm + notaDois) / 2;
+		//estrutura de seleção múltipla
+		if(media < 5){
+			status = "Reprovado";
+		}else if(media < 7){
+			status = "Recuperação";
+		}else{
+			status = "Aprovado";
+		}
+		document.write("Sua média foi de " + media + " e seu status é " + status + ".")
+	</script>
+</head>
+<body>
+
+</body>
+</html>

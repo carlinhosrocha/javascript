@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElementByTagName</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>Carlos Rocha</p>
+	<p>eZattas Web</p>
+	<p>Curso de JavaScript</p>
+	<script type="text/javascript">
+		var p = document.getElementsByTagName("p"); //retorna elemento em forma de vetor
+		var site = document.getElementsByTagName("p")[1]; //elemento de indice 1
+		var tudo = document.getElementsByTagName("*"); //pega todas as tags
+		site.style.color="#00f";
+		alert(p[0].innerHTML); //exibe conteúdo da tag
+	</script>
+</body>
+</html>

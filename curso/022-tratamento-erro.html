@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tratamento de Erros</title>
+	<script type="text/javascript">
+		/*try{
+			document.write("Tratamento de Erro em JS"); 
+		}catch(erro){
+			document.write("ERRO!!!<br>");
+			document.write(erro.message); //mostrando mensagem de erro armazenado na variável e
+		}*/
+		//"criando" tipo de erro própria
+		try{
+			num = prompt("Digite um valor de no máximo até 10: ");
+			if(num > 10){
+				throw new Error("Valor inválido!"); //criando um novo tipo de erro
+			}
+			document.write("Valor: " + num);
+		}catch(erro){
+			document.write("ERROR! " + erro.message);
+		}finally{
+			document.write("<br>Volte sempre!");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
